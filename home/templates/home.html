@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<header class="masthead">
+    <section class="home-section active">
+        <h1 class="hero-heading">hi, i'm <br> shayne</h1>
+        <img src="{% static 'img/shayne-nowikow.png' %}" class="home-img" alt="web developer">
+    </section>
+</header>
+<div class="container">
+    <div class="row">
+        <!-- Intro  -->
+        <div>
+            <h1 class="heading-text">I'm a web developer and aspiring data scientist</h1>
+            <p class="body-text">Everything I know is self-taught, and all through working experience without any formal qualifications. As such, this site is a portfolio of evidence. </p>
+            <p class="body-text">As you'll see, it's a work in progress but I'll be adding more content and updating the site as I go.</p>
+        </div>
+    </div>
+</div>
+<!-- project section -->
+<section class="project-section active">
+    <h1 class="project-heading">Some of my projects</h1>
+    <div class="project-container">
+        <div class="project-card">
+            <img src="{% static '/img/mydss-django-project.png' %}" class="project-img" alt="django developer">
+            <div class="project-content">
+                <h1 class="project-title">Django Blog</h1>
+                <p class="body-text">
+                    This entire site has been built using Django. It consists of two apps, one displaying the pages and the other managing my blog posts.
+                </p>
+                <div class="project-btn-grp">
+                    <a href="https://github.com/soluconsole/mydss" target="_blank"><button class="project-btn github">github repo</button></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="{% static '/img/what2watch-block.png' %}" class="project-img" alt="movie recommendation app">
+            <div class="project-content">
+                <h1 class="project-title">What2Watch App</h1>
+                <p class="body-text">
+                    Even though I built it to help you pick something to watch, there's no actual video content, but it looks and feels like Netflix. You can register on the site and create your own personal account.
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">github repo</button>
+                    <button class="project-btn live">Almost live</button>
+                </div>
+            </div>
+        </div>
+        // <h2>Watch this space for more!</h2>
+    </div>
+</section>
+
+<!-- skills -->
+<div class="skill-section">
+    <h1 class="heading">My skills</h1>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="img/html.png" class="skill-img" alt="">
+            <div class="skill-level">89%</div>
+            <h1 class="skill-name">Web Development</h1>
+            <p class="skill-info">Python, Javascript, HTML & CSS</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/html.png" class="skill-img" alt="">
+            <div class="skill-level">78%</div>
+            <h1 class="skill-name">Data Analysis</h1>
+            <p class="skill-info">Data extraction, data cleaning, & data analysis</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/html.png" class="skill-img" alt="">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">SEO & Online Marketing</h1>
+            <p class="skill-info">I can help you put an entire marketing campaign together</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/html.png" class="skill-img" alt="">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">Content Writing</h1>
+            <p class="skill-info">Writing is my thing, whether it's code, content or an analytics report</p>
+        </div>
+    </div>
+</div>
+
+<!-- timeline -->
+<div class="timeline">
+    <h1 class="heading">Work Experience</h1>
+    <p class="heading">A couple highlights of my IT related work history and background.</p>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Solutions Console</h1>
+            <p class="card-detail">A freelance business that I started back in 2008, after leaving the insurance game. I started off writing SEO content and eventuallyu worked my way up to being a developer.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Black-Belt VFX & Design</h1>
+            <p class="card-detail">I deploy Django and WordPress back-ends for their front-end designs. This includes Cloud deployments on AWS, as well as vanilla hosting environments.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Web Ink & Fat Possum</h1>
+            <p class="card-detail">WordPress design and customisation for their web agency. I specialised in bespoke designs that often required out-the-box thinking to get the designs working.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Intoweb</h1>
+            <p class="card-detail">I initially started off as an SEO specialist, and gradually began handling client support for their hosting clients. I also managed the SEO campaigns for their online marketing clients.</p>
+        </div>
+    </div>
+</div>
+<!-- about section -->
+<section class="about-section active">
+    <div class="about">
+        <div class="about-img-container">
+            <img src="{% static 'img/download-pdf.jpg' %}" class="about-img" alt="Shayne Nowikow web developer">
+            <button class="download-cv-btn">downlaod cv</button>
+        </div>
+        <p class="about-info">Feel free to download a copy of my CV for your records.</p>
+    </div>
+</section>
+
+{%endblock%}
